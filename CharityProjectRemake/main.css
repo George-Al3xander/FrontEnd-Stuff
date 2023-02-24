@@ -1,10 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
+body {
+	display:grid;
+	grid-template-columns: 1fr 75em 1fr;
+	grid-template-areas: 
+	"header header header"
+	". about-company ."
+	;
+
+}
+
+.container {	
+	display:flex;
+	gap:4em;
+	padding:4em;
+}
+
+.container > *  {
+	
+	flex-basis:100%;
+	flex-grow: 1; 
+	flex-shrink: 1;
+}
 
 .header {	
+	grid-area: header;
 	width:100%;
 	color:white;
 	text-transform: capitalize;
@@ -13,6 +37,8 @@
 	 	rgba(0,0,0,0.6643032212885154) 0%),
 		url("img/pics/header-background.webp");
 	background-size:100%;
+	background-repeat: no-repeat;
+	background-position: fixed;
 	height:45em;
 	display:flex;
 	flex-direction:column;
@@ -21,10 +47,11 @@
 
 .header-top {
 	display:flex;
-	gap:10rem;
-	justify-content: space-around;
+	gap:20em;
+	justify-content: center;
 	align-items: center;
 	padding:2em;
+	
 	
 }
 
@@ -37,7 +64,8 @@
 
 .header-top nav ul {
 	display: flex;
-	gap: 3rem;
+
+	gap: 3em;
 	align-content: center;
 }
 
@@ -53,7 +81,7 @@
 }
 
 .header-top nav ul li:hover , .header-top nav ul li {
-	transition: opacity .6s ease;
+	transition: opacity .4s ease;
 }
 
 .header-bottom {
