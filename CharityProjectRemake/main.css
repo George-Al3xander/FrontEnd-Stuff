@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.header {	
+	width:100%;
+	color:white;
+	text-transform: capitalize;
+	background: 
+		linear-gradient(90deg, rgba(2,0,36,1) 0%,
+	 	rgba(0,0,0,0.6643032212885154) 0%),
+		url("img/pics/header-background.webp");
+	background-size:100%;
+	height:45em;
+	display:flex;
+	flex-direction:column;
+	gap: 10em;
+}
+
+.header-top {
+	display:flex;
+	gap:10rem;
+	justify-content: space-around;
+	align-items: center;
+	padding:2em;
+	
+}
+
+.header-top h1 {
+	text-transform: uppercase;
+	font-size:2.5rem;
+	font-weight: normal;
+}
+
+
+.header-top nav ul {
+	display: flex;
+	gap: 3rem;
+	align-content: center;
+}
+
+.current-page  {
+	border-bottom: .18rem solid white;
+	padding-bottom: 1rem;
+}
+
+
+.header-top nav ul li:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.header-top nav ul li:hover , .header-top nav ul li {
+	transition: opacity .6s ease;
+}
+
+.header-bottom {
+	display:flex;
+	flex:1;
+	flex-direction: column;	
+	text-align: center;
+	align-items:center;
+
+}
+
+.header-bottom p {
+	font-size:3.5rem;
+}
+
+.header-bottom a {
+	font-size:1rem;
+}

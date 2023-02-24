@@ -1,0 +1,70 @@
+body{
+	
+	grid-template-rows:700px 1080px 500px 800px;
+	grid-template-areas:
+	"header header header"	
+	". latest-donations ."		
+	"form form form"
+	"footer-info footer-info footer-info"
+	;
+}
+
+.latest-donations {		
+	display:grid;
+	
+	grid-template-rows:200px 330px;
+	grid-template-areas:
+	". top-text ."
+	". ld-donators ."
+	;
+	margin-bottom:150px;
+}
+
+
+.ld-donators {
+	grid-area:ld-donators;
+	display:grid;
+	grid-template-columns:300px 300px 300px 300px;
+	
+
+	grid-template-areas: 
+	"ld-person-1 ld-person-2 ld-person-3 ld-person-4"
+	"ld-person-5 ld-person-6 ld-person-7 ld-person-8"
+	;
+}
+
+.ld-person-1 {
+	grid-area:ld-person-1;
+	justify-content:center;
+}
+.ld-person-2 {
+	grid-area:ld-person-2;
+	justify-content:center;
+}
+.ld-person-3 {
+	grid-area:ld-person-3;
+	justify-content:center;
+}
+
+.ld-person-4 {
+	grid-area:ld-person-4;
+	justify-content:center;
+}
+
+.ld-person-5 {
+	grid-area:ld-person-5;
+	justify-content:center;
+}
+.ld-person-6 {
+	grid-area:ld-person-6;
+	justify-content:center;
+}
+.ld-person-7 {
+	grid-area:ld-person-7;
+	justify-content:center;
+}
+
+.ld-person-8 {
+	grid-area:ld-person-8;
+	justify-content:center;
+}

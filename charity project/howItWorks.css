@@ -1,0 +1,70 @@
+body{
+	margin: 0 auto;
+	display:grid;
+	grid-template-columns: 1fr 1200px 1fr ;
+	grid-template-rows:700px 900px 730px 500px 800px;
+	grid-template-areas:
+	"header header header"
+	". steps ."	
+	". latest-donations ."	
+	"form form form"
+	"footer-info footer-info footer-info"
+	;
+	
+
+}
+
+
+
+.steps  {
+	grid-area: steps;
+	display:grid;
+	grid-template-rows:405px;
+	row-gap: 30px;
+	grid-template-areas:
+	"step-1"
+	"step-2"
+	;
+
+
+}
+
+.steps h1 {
+	font-size:32px;
+	font-weight:normal;
+}
+
+.steps p {
+	font-size:22px;
+	opacity:0.7;
+}
+
+.steps h4 {
+	color:grey;
+	opacity:0.4;
+	font-weight:normal;
+
+}
+
+.steps img {
+	border-radius:0px;
+}
+
+.steps aside {
+	margin:30px;
+}
+
+.step-1 {
+	
+	grid-area:step-1;
+	
+}
+
+.step-2 {
+	grid-area:step-2;
+}
+
+.step-1,.step-2 {
+	display:flex;
+	justify-content:center;
+}
